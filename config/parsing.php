@@ -22,6 +22,6 @@ return [
         'Zhongguo' => '中国银行',      //Finish
         'Zhongxin' => '中信银行',     //Finish
     ],
-    'host' => 'http://192.168.5.151:8002',
-    'appcode' => '5196cfed73ad4a6797d63dee16b1be39',
+    'host' => '',  //当前请求域名
+    'appcode' => '',  //支付宝pdftoxml密钥
 ];
