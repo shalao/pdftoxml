@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pdf to xml</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+<form action="/upload" enctype="multipart/form-data" method="post">
+    密码(非必填) &nbsp;&nbsp;<input type="text" name="password"><br>
+    流水类型(非必填) &nbsp;&nbsp;
+    <select autocomplete="off" name='type'>
+	<option disabled selected value=""></option>
+	<option value="Gongshang">工商银行</option>
+        <option value="Jiaotong">交通银行</option>
+        <option value="Minsheng">民生银行</option>
+        <option value="Pingan">平安银行</option>
+        <option value="Pudong">上海浦东</option>
+        <option value="Weixin">微信</option>
+        <option value="Zhaoshang">招商银行</option>
+        <option value="Zhejiangfuyang">浙江富阳农村</option>
+        <option value="Zheshang">浙商银行</option>
+        <option value="Zhifubao">支付宝</option>
+        <option value="Jianshe">建设银行</option>
+        <option value="Nongye">中国农业银行</option>
+        <option value="Zhongguo">中国银行</option>
+        <option value="Zhongxin">中信银行</option>
+    </select><br>
+    pdf文件流水 &nbsp;&nbsp;<input type="file" name="path" /><br>
+    为了保证质量，解析需要点时间，请耐心等待&nbsp;&nbsp;<input type="submit" value="上传" />
+</form>
+<p><strong>注意：</strong>流水类型非必填，如果没有填时会根据文件名是否包含关键子匹配。</p>
+<p><strong>匹配规则：</strong>文件名："微信支付交易明细证明(20200901-20210831)" 能匹配成功，因为”微信“关键字</p>
+<p><strong>关键字如下：</strong>工商银行、交通银行、民生银行、平安银行、上海浦东、微信、招商银行、浙江富阳农村、浙商银行、支付宝、建设银行、中国农业银行、中国银行、中信银行</p>
+</body>
+</html>
